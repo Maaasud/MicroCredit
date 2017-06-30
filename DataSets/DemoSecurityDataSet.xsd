@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DemoSecurityDataSet" targetNamespace="http://tempuri.org/DemoSecurityDataSet.xsd" xmlns:mstns="http://tempuri.org/DemoSecurityDataSet.xsd" xmlns="http://tempuri.org/DemoSecurityDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="1" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="SmallCompanyAccountingConnectionString" IsAppSettingsProperty="True" Modifier="Assembly" Name="SmallCompanyAccountingConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.MicroCredit.Properties.Settings.GlobalReference.Default.SmallCompanyAccountingConnectionString" Provider="System.Data.SqlClient">
+          </Connection>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="MicroCreditConnectionString" ConnectionStringObject="" IsAppSettingsProperty="True" Modifier="Assembly" Name="MicroCreditConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.MicroCredit.Properties.Settings.GlobalReference.Default.MicroCreditConnectionString" Provider="System.Data.SqlClient">
+          </Connection>
+        </Connections>
+        <Tables>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DemoSecurityDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="DemoSecurityDataSet" msprop:Generator_DataSetName="DemoSecurityDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="ActiveMachine" msprop:Generator_UserTableName="ActiveMachine" msprop:Generator_RowDeletedName="ActiveMachineRowDeleted" msprop:Generator_RowChangedName="ActiveMachineRowChanged" msprop:Generator_RowClassName="ActiveMachineRow" msprop:Generator_RowChangingName="ActiveMachineRowChanging" msprop:Generator_RowEvArgName="ActiveMachineRowChangeEvent" msprop:Generator_RowEvHandlerName="ActiveMachineRowChangeEventHandler" msprop:Generator_TableClassName="ActiveMachineDataTable" msprop:Generator_TableVarName="tableActiveMachine" msprop:Generator_RowDeletingName="ActiveMachineRowDeleting" msprop:Generator_TablePropName="ActiveMachine">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="IID" msdata:DataType="System.Guid, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" msprop:Generator_UserColumnName="IID" msprop:Generator_ColumnVarNameInTable="columnIID" msprop:Generator_ColumnPropNameInRow="IID" msprop:Generator_ColumnPropNameInTable="IIDColumn" type="xs:string" />
+              <xs:element name="ActiveMachine" msprop:Generator_UserColumnName="ActiveMachine" msprop:Generator_ColumnVarNameInTable="columnActiveMachine" msprop:Generator_ColumnPropNameInRow="ActiveMachine" msprop:Generator_ColumnPropNameInTable="ActiveMachineColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Processor" msprop:Generator_UserColumnName="Processor" msprop:Generator_ColumnVarNameInTable="columnProcessor" msprop:Generator_ColumnPropNameInRow="Processor" msprop:Generator_ColumnPropNameInTable="ProcessorColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="250" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Matherboard" msprop:Generator_UserColumnName="Matherboard" msprop:Generator_ColumnVarNameInTable="columnMatherboard" msprop:Generator_ColumnPropNameInRow="Matherboard" msprop:Generator_ColumnPropNameInTable="MatherboardColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="250" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="SecurityCheck" msprop:Generator_UserTableName="SecurityCheck" msprop:Generator_RowDeletedName="SecurityCheckRowDeleted" msprop:Generator_TableClassName="SecurityCheckDataTable" msprop:Generator_RowChangedName="SecurityCheckRowChanged" msprop:Generator_RowClassName="SecurityCheckRow" msprop:Generator_RowChangingName="SecurityCheckRowChanging" msprop:Generator_RowEvArgName="SecurityCheckRowChangeEvent" msprop:Generator_RowEvHandlerName="SecurityCheckRowChangeEventHandler" msprop:Generator_TablePropName="SecurityCheck" msprop:Generator_TableVarName="tableSecurityCheck" msprop:Generator_RowDeletingName="SecurityCheckRowDeleting">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="IID" msdata:DataType="System.Guid, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" msprop:Generator_UserColumnName="IID" msprop:Generator_ColumnPropNameInRow="IID" msprop:Generator_ColumnVarNameInTable="columnIID" msprop:Generator_ColumnPropNameInTable="IIDColumn" type="xs:string" />
+              <xs:element name="MachineID" msprop:Generator_UserColumnName="MachineID" msprop:Generator_ColumnPropNameInRow="MachineID" msprop:Generator_ColumnVarNameInTable="columnMachineID" msprop:Generator_ColumnPropNameInTable="MachineIDColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="250" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SetupDate" msprop:Generator_UserColumnName="SetupDate" msprop:Generator_ColumnPropNameInRow="SetupDate" msprop:Generator_ColumnVarNameInTable="columnSetupDate" msprop:Generator_ColumnPropNameInTable="SetupDateColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="EndDate" msprop:Generator_UserColumnName="EndDate" msprop:Generator_ColumnPropNameInRow="EndDate" msprop:Generator_ColumnVarNameInTable="columnEndDate" msprop:Generator_ColumnPropNameInTable="EndDateColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Active" msprop:Generator_UserColumnName="Active" msprop:Generator_ColumnPropNameInRow="Active" msprop:Generator_ColumnVarNameInTable="columnActive" msprop:Generator_ColumnPropNameInTable="ActiveColumn" type="xs:boolean" minOccurs="0" />
+              <xs:element name="AccessTime" msprop:Generator_UserColumnName="AccessTime" msprop:Generator_ColumnPropNameInRow="AccessTime" msprop:Generator_ColumnVarNameInTable="columnAccessTime" msprop:Generator_ColumnPropNameInTable="AccessTimeColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="AccessLimit" msprop:Generator_UserColumnName="AccessLimit" msprop:Generator_ColumnPropNameInRow="AccessLimit" msprop:Generator_ColumnVarNameInTable="columnAccessLimit" msprop:Generator_ColumnPropNameInTable="AccessLimitColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="IsDemo" msprop:Generator_UserColumnName="IsDemo" msprop:Generator_ColumnPropNameInRow="IsDemo" msprop:Generator_ColumnVarNameInTable="columnIsDemo" msprop:Generator_ColumnPropNameInTable="IsDemoColumn" type="xs:boolean" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:ActiveMachine" />
+      <xs:field xpath="mstns:IID" />
+    </xs:unique>
+    <xs:unique name="SecurityCheck_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:SecurityCheck" />
+      <xs:field xpath="mstns:IID" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

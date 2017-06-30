@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="PaymentDataset" targetNamespace="http://tempuri.org/PaymentDataset.xsd" xmlns:mstns="http://tempuri.org/PaymentDataset.xsd" xmlns="http://tempuri.org/PaymentDataset.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="1" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="MicroCreditConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="MicroCreditConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.MicroCredit.Properties.Settings.GlobalReference.Default.MicroCreditConnectionString" Provider="System.Data.SqlClient" />
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="MicroCreditConnectionString1" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="MicroCreditConnectionString1 (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.MicroCredit.Properties.Settings.GlobalReference.Default.MicroCreditConnectionString1" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="PaymentDataset" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_DataSetName="PaymentDataset" msprop:Generator_UserDSName="PaymentDataset">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="DepositDetails" msprop:Generator_UserTableName="DepositDetails" msprop:Generator_RowEvArgName="DepositDetailsRowChangeEvent" msprop:Generator_TableVarName="tableDepositDetails" msprop:Generator_TablePropName="DepositDetails" msprop:Generator_RowDeletingName="DepositDetailsRowDeleting" msprop:Generator_RowChangingName="DepositDetailsRowChanging" msprop:Generator_RowDeletedName="DepositDetailsRowDeleted" msprop:Generator_RowEvHandlerName="DepositDetailsRowChangeEventHandler" msprop:Generator_TableClassName="DepositDetailsDataTable" msprop:Generator_RowChangedName="DepositDetailsRowChanged" msprop:Generator_RowClassName="DepositDetailsRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="IID" msdata:DataType="System.Guid, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" msprop:Generator_ColumnVarNameInTable="columnIID" msprop:Generator_ColumnPropNameInRow="IID" msprop:Generator_ColumnPropNameInTable="IIDColumn" msprop:Generator_UserColumnName="IID" type="xs:string" />
+              <xs:element name="MasterID" msdata:DataType="System.Guid, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" msprop:Generator_ColumnVarNameInTable="columnMasterID" msprop:Generator_ColumnPropNameInRow="MasterID" msprop:Generator_ColumnPropNameInTable="MasterIDColumn" msprop:Generator_UserColumnName="MasterID" type="xs:string" />
+              <xs:element name="Dateof" msprop:Generator_ColumnVarNameInTable="columnDateof" msprop:Generator_ColumnPropNameInRow="Dateof" msprop:Generator_ColumnPropNameInTable="DateofColumn" msprop:Generator_UserColumnName="Dateof" type="xs:dateTime" />
+              <xs:element name="Description" msprop:Generator_ColumnVarNameInTable="columnDescription" msprop:Generator_ColumnPropNameInRow="Description" msprop:Generator_ColumnPropNameInTable="DescriptionColumn" msprop:Generator_UserColumnName="Description" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="InstallmentSL" msprop:Generator_ColumnVarNameInTable="columnInstallmentSL" msprop:Generator_ColumnPropNameInRow="InstallmentSL" msprop:Generator_ColumnPropNameInTable="InstallmentSLColumn" msprop:Generator_UserColumnName="InstallmentSL" type="xs:long" minOccurs="0" />
+              <xs:element name="ReceiptNo" msprop:Generator_ColumnVarNameInTable="columnReceiptNo" msprop:Generator_ColumnPropNameInRow="ReceiptNo" msprop:Generator_ColumnPropNameInTable="ReceiptNoColumn" msprop:Generator_UserColumnName="ReceiptNo" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Withdrawal" msprop:Generator_ColumnVarNameInTable="columnWithdrawal" msprop:Generator_ColumnPropNameInRow="Withdrawal" msprop:Generator_ColumnPropNameInTable="WithdrawalColumn" msprop:Generator_UserColumnName="Withdrawal" type="xs:decimal" minOccurs="0" />
+              <xs:element name="DepositProfit" msprop:Generator_ColumnVarNameInTable="columnDepositProfit" msprop:Generator_ColumnPropNameInRow="DepositProfit" msprop:Generator_ColumnPropNameInTable="DepositProfitColumn" msprop:Generator_UserColumnName="DepositProfit" type="xs:decimal" minOccurs="0" />
+              <xs:element name="TotalAmount" msprop:Generator_ColumnVarNameInTable="columnTotalAmount" msprop:Generator_ColumnPropNameInRow="TotalAmount" msprop:Generator_ColumnPropNameInTable="TotalAmountColumn" msprop:Generator_UserColumnName="TotalAmount" type="xs:decimal" minOccurs="0" />
+              <xs:element name="SaveDate" msprop:Generator_ColumnVarNameInTable="columnSaveDate" msprop:Generator_ColumnPropNameInRow="SaveDate" msprop:Generator_ColumnPropNameInTable="SaveDateColumn" msprop:Generator_UserColumnName="SaveDate" type="xs:dateTime" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="TotalAmountPolicyLookup" msprop:Generator_UserTableName="TotalAmountPolicyLookup" msprop:Generator_RowEvArgName="TotalAmountPolicyLookupRowChangeEvent" msprop:Generator_TableVarName="tableTotalAmountPolicyLookup" msprop:Generator_TablePropName="TotalAmountPolicyLookup" msprop:Generator_RowDeletingName="TotalAmountPolicyLookupRowDeleting" msprop:Generator_RowChangingName="TotalAmountPolicyLookupRowChanging" msprop:Generator_RowDeletedName="TotalAmountPolicyLookupRowDeleted" msprop:Generator_RowEvHandlerName="TotalAmountPolicyLookupRowChangeEventHandler" msprop:Generator_TableClassName="TotalAmountPolicyLookupDataTable" msprop:Generator_RowChangedName="TotalAmountPolicyLookupRowChanged" msprop:Generator_RowClassName="TotalAmountPolicyLookupRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="MasterID" msdata:DataType="System.Guid, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" msprop:Generator_ColumnVarNameInTable="columnMasterID" msprop:Generator_ColumnPropNameInRow="MasterID" msprop:Generator_ColumnPropNameInTable="MasterIDColumn" msprop:Generator_UserColumnName="MasterID" type="xs:string" />
+              <xs:element name="TotalDeposit" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnTotalDeposit" msprop:Generator_ColumnPropNameInRow="TotalDeposit" msprop:Generator_ColumnPropNameInTable="TotalDepositColumn" msprop:Generator_UserColumnName="TotalDeposit" type="xs:decimal" minOccurs="0" />
+              <xs:element name="TotalWithdraw" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnTotalWithdraw" msprop:Generator_ColumnPropNameInRow="TotalWithdraw" msprop:Generator_ColumnPropNameInTable="TotalWithdrawColumn" msprop:Generator_UserColumnName="TotalWithdraw" type="xs:decimal" minOccurs="0" />
+              <xs:element name="TotalAmount" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnTotalAmount" msprop:Generator_ColumnPropNameInRow="TotalAmount" msprop:Generator_ColumnPropNameInTable="TotalAmountColumn" msprop:Generator_UserColumnName="TotalAmount" type="xs:decimal" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="ExpensesReason" msprop:Generator_TableClassName="ExpensesReasonDataTable" msprop:Generator_RowEvArgName="ExpensesReasonRowChangeEvent" msprop:Generator_TableVarName="tableExpensesReason" msprop:Generator_TablePropName="ExpensesReason" msprop:Generator_RowDeletingName="ExpensesReasonRowDeleting" msprop:Generator_RowChangingName="ExpensesReasonRowChanging" msprop:Generator_RowEvHandlerName="ExpensesReasonRowChangeEventHandler" msprop:Generator_RowDeletedName="ExpensesReasonRowDeleted" msprop:Generator_UserTableName="ExpensesReason" msprop:Generator_RowChangedName="ExpensesReasonRowChanged" msprop:Generator_RowClassName="ExpensesReasonRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Reason" msprop:Generator_ColumnVarNameInTable="columnReason" msprop:Generator_ColumnPropNameInRow="Reason" msprop:Generator_ColumnPropNameInTable="ReasonColumn" msprop:Generator_UserColumnName="Reason">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="CashBook" msprop:Generator_TableClassName="CashBookDataTable" msprop:Generator_TableVarName="tableCashBook" msprop:Generator_TablePropName="CashBook" msprop:Generator_RowDeletingName="CashBookRowDeleting" msprop:Generator_RowChangingName="CashBookRowChanging" msprop:Generator_RowEvHandlerName="CashBookRowChangeEventHandler" msprop:Generator_RowDeletedName="CashBookRowDeleted" msprop:Generator_UserTableName="CashBook" msprop:Generator_RowChangedName="CashBookRowChanged" msprop:Generator_RowEvArgName="CashBookRowChangeEvent" msprop:Generator_RowClassName="CashBookRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="IID" msdata:DataType="System.Guid, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" msprop:Generator_ColumnVarNameInTable="columnIID" msprop:Generator_ColumnPropNameInRow="IID" msprop:Generator_ColumnPropNameInTable="IIDColumn" msprop:Generator_UserColumnName="IID" type="xs:string" />
+              <xs:element name="ReceiptVoucher" msprop:Generator_ColumnVarNameInTable="columnReceiptVoucher" msprop:Generator_ColumnPropNameInRow="ReceiptVoucher" msprop:Generator_ColumnPropNameInTable="ReceiptVoucherColumn" msprop:Generator_UserColumnName="ReceiptVoucher" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Deposit" msprop:Generator_ColumnVarNameInTable="columnDeposit" msprop:Generator_ColumnPropNameInRow="Deposit" msprop:Generator_ColumnPropNameInTable="DepositColumn" msprop:Generator_UserColumnName="Deposit" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Withdraw" msprop:Generator_ColumnVarNameInTable="columnWithdraw" msprop:Generator_ColumnPropNameInRow="Withdraw" msprop:Generator_ColumnPropNameInTable="WithdrawColumn" msprop:Generator_UserColumnName="Withdraw" type="xs:decimal" minOccurs="0" />
+              <xs:element name="TrDate" msprop:Generator_ColumnVarNameInTable="columnTrDate" msprop:Generator_ColumnPropNameInRow="TrDate" msprop:Generator_ColumnPropNameInTable="TrDateColumn" msprop:Generator_UserColumnName="TrDate" type="xs:dateTime" />
+              <xs:element name="Description" msprop:Generator_ColumnVarNameInTable="columnDescription" msprop:Generator_ColumnPropNameInRow="Description" msprop:Generator_ColumnPropNameInTable="DescriptionColumn" msprop:Generator_UserColumnName="Description" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="250" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="FDRID" msdata:DataType="System.Guid, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" msprop:Generator_ColumnVarNameInTable="columnFDRID" msprop:Generator_ColumnPropNameInRow="FDRID" msprop:Generator_ColumnPropNameInTable="FDRIDColumn" msprop:Generator_UserColumnName="FDRID" type="xs:string" minOccurs="0" />
+              <xs:element name="LoanID" msdata:DataType="System.Guid, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" msprop:Generator_ColumnVarNameInTable="columnLoanID" msprop:Generator_ColumnPropNameInRow="LoanID" msprop:Generator_ColumnPropNameInTable="LoanIDColumn" msprop:Generator_UserColumnName="LoanID" type="xs:string" minOccurs="0" />
+              <xs:element name="PolicyID" msdata:DataType="System.Guid, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" msprop:Generator_ColumnVarNameInTable="columnPolicyID" msprop:Generator_ColumnPropNameInRow="PolicyID" msprop:Generator_ColumnPropNameInTable="PolicyIDColumn" msprop:Generator_UserColumnName="PolicyID" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="FDRMemberLookup" msprop:Generator_TableClassName="FDRMemberLookupDataTable" msprop:Generator_TableVarName="tableFDRMemberLookup" msprop:Generator_TablePropName="FDRMemberLookup" msprop:Generator_RowDeletingName="FDRMemberLookupRowDeleting" msprop:Generator_RowChangingName="FDRMemberLookupRowChanging" msprop:Generator_RowEvHandlerName="FDRMemberLookupRowChangeEventHandler" msprop:Generator_RowDeletedName="FDRMemberLookupRowDeleted" msprop:Generator_UserTableName="FDRMemberLookup" msprop:Generator_RowChangedName="FDRMemberLookupRowChanged" msprop:Generator_RowEvArgName="FDRMemberLookupRowChangeEvent" msprop:Generator_RowClassName="FDRMemberLookupRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="IID" msdata:DataType="System.Guid, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" msprop:Generator_ColumnVarNameInTable="columnIID" msprop:Generator_ColumnPropNameInRow="IID" msprop:Generator_ColumnPropNameInTable="IIDColumn" msprop:Generator_UserColumnName="IID" type="xs:string" />
+              <xs:element name="MonthlyProfitAmount" msprop:Generator_ColumnVarNameInTable="columnMonthlyProfitAmount" msprop:Generator_ColumnPropNameInRow="MonthlyProfitAmount" msprop:Generator_ColumnPropNameInTable="MonthlyProfitAmountColumn" msprop:Generator_UserColumnName="MonthlyProfitAmount" type="xs:decimal" />
+              <xs:element name="MemberCode" msprop:Generator_ColumnVarNameInTable="columnMemberCode" msprop:Generator_ColumnPropNameInRow="MemberCode" msprop:Generator_ColumnPropNameInTable="MemberCodeColumn" msprop:Generator_UserColumnName="MemberCode">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="FullName" msprop:Generator_ColumnVarNameInTable="columnFullName" msprop:Generator_ColumnPropNameInRow="FullName" msprop:Generator_ColumnPropNameInTable="FullNameColumn" msprop:Generator_UserColumnName="FullName">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="150" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="FDRNumber" msprop:Generator_ColumnVarNameInTable="columnFDRNumber" msprop:Generator_ColumnPropNameInRow="FDRNumber" msprop:Generator_ColumnPropNameInTable="FDRNumberColumn" msprop:Generator_UserColumnName="FDRNumber" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:DepositDetails" />
+      <xs:field xpath="mstns:IID" />
+    </xs:unique>
+    <xs:unique name="ExpensesReason_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:ExpensesReason" />
+      <xs:field xpath="mstns:Reason" />
+    </xs:unique>
+    <xs:unique name="CashBook_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:CashBook" />
+      <xs:field xpath="mstns:IID" />
+    </xs:unique>
+    <xs:unique name="FDRMemberLookup_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:FDRMemberLookup" />
+      <xs:field xpath="mstns:IID" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>
